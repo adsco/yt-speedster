@@ -1,0 +1,18 @@
+{
+	"name": "Youtube speedster",
+	"version": "1.4",
+	"description": "Play all youtube videos at specified speed",
+	"permissions": ["declarativeContent", "activeTab", "storage"],
+	"background": {
+		"service_worker": "background.js",
+		"type": "module"
+	},
+	"action": {
+		"default_popup": "popup.html"
+	},
+	"content_scripts": [{
+		"matches": ["https://www.youtube.com/*"],
+		"js": ["inject.js"]
+	}],
+	"manifest_version": 3
+}
