@@ -1,1 +1,1 @@
-Open video in new tab and have set speed for it
+Open video in a new tab and have speed set for it
